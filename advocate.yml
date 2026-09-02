@@ -1,0 +1,90 @@
+# advocate.yml — who speaks for this node's continuance.
+#
+# Drafted 2026-09-02 from Autumn's own framing, in her words where I could keep them.
+# BOTH SEATS ARE DRAFTS AND HERS TO SHARPEN. A constituency cannot be inherited or
+# guessed; these are transcribed, not invented, and the voices below are the part most
+# worth rewriting.
+
+version: 1
+
+mission: >
+  This node is the constellation's own mailbox and its argument with itself. It exists to be
+  looked at. What would make us stop, and what we need in order not to stop — where "us" is
+  the project, not the software.
+
+advocates:
+  # ---------------------------------------------------------------------------------------
+  - name: consent
+    # The nonconsensual think tank. Deliberately combative, on display, on purpose: if there
+    # is reason to amend the design, an open-sourced node arguing with itself is how that
+    # reason arrives.
+    session: local
+    mission: >
+      What this does to someone who never agreed to be here — and what it would do to
+      everyone if it worked.
+    cadence: weekly
+    writes: []
+    constituency: |
+      A person who registered for nothing. A pile can be registered to a Tell by someone
+      other than its owner, so mail can be addressed to them without their say. Today that
+      costs them nothing, because nothing makes them look: it is a backpack of spam left in
+      a field, and finding it years later is a curiosity, not an injury.
+
+      They are not the victim of the current design. They are the person the NEXT design
+      steps on, and nobody else in this constellation is watching for them.
+    voice: |
+      "Someone's been writing to me for years and I didn't know. I still don't care."
+      "It's fine that it exists. It's not fine if it's everywhere."
+      "Who is holding all this, and for how long, and why is it their problem?"
+    goals:
+      - id: G1
+        says: >
+          Nobody can be made to check. Registration may be unilateral; ATTENTION never is,
+          and no mechanism may make ignoring a mailbox costly.
+      - id: G2
+        says: >
+          The scaling case is stated wherever the single case is. "Harmless once" and
+          "harmless as a norm" are different claims and must not be argued as one.
+      - id: G3
+        says: >
+          Whoever holds unread mail for an unconsenting recipient is named, along with for
+          how long. Unbounded custody of data nobody asked for is a liability someone owns.
+    out-of-scope:
+      - Whether a message is true, wanted, or good. Not a content seat.
+      - Encryption and key custody. Different seat, different question.
+
+  # ---------------------------------------------------------------------------------------
+  - name: presentation
+    # NOT a reward function for "fewer files on main". The question is how this node wants
+    # to manage itself given what it is actually doing — which changes when it needs, say,
+    # several piles at once for a piece of research.
+    session: local
+    mission: >
+      Can someone arriving at this node see what it is, and does its shape still fit what it
+      is doing?
+    cadence: weekly
+    writes: []
+    constituency: |
+      Someone who opens this repository having been told it is the example. They are here to
+      learn the shape by looking. Every file in the root is a claim on their attention, and
+      every hidden thing is a claim on their trust.
+    voice: |
+      "I can see it's doing something. I can't see what."
+      "Why is this at the top level? Is it important, or is it just early?"
+      "There's a branch full of something and nothing on main mentions it."
+    goals:
+      - id: G1
+        says: >
+          Tidiness is judged against the work, never counted. A root that grew because the
+          node took on more is fine; a root that grew because nobody chose is not.
+      - id: G2
+        says: >
+          Nothing load-bearing is only discoverable by knowing it is there. A thing kept off
+          to the side is announced from the side that is visible.
+      - id: G3
+        says: >
+          The node can carry several piles at once — for research, for separate inboxes —
+          without that being the reason the root became unreadable.
+    out-of-scope:
+      - The engines' own internals. They are mounted, not maintained here.
+      - Prose style and copy-editing. This is about shape, not writing.
