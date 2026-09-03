@@ -9,23 +9,12 @@ Generated 2026-09-03 by `.advocate-engine/bin/digest.mjs`. Do not edit it — ed
 | --- | --- | --- | --- | --- | --- |
 | [`consent`](consent.md) | 2026-09-03 | 1 | 2 | 0 | up to date |
 | [`presentation`](presentation.md) | 2026-09-03 | 1 | 1 | 0 | up to date |
-| [`addressing`](addressing.md) | — | 0 | 0 | 0 | **session owed** |
+| [`addressing`](addressing.md) | 2026-09-03 | 1 | 5 | 0 | up to date |
 
 ## Asking to graduate
 
 Nothing is `ready`. That is a normal reading and not a stall — `draft` is where thinking is
 supposed to sit until it ripens, and a seat is not owed a promotion for having run.
-
-## Owed a session
-
-The mechanical half ran and left a work order. Anything can pick it up — a local agent, a
-scheduled routine, or a person with an afternoon.
-
-- `addressing` → `advocate/addressing` · `sessions/PENDING.md`
-
-```sh
-node .advocate-engine/bin/pending.mjs
-```
 
 ## What a seat is
 
