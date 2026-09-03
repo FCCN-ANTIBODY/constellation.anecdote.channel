@@ -5,14 +5,19 @@ prepared, the pin is recorded, and the range below is what moved. What is missin
 needs judgement.
 
 - **Advocate:** `consent`  ·  **Branch:** `advocate/consent`
-- **Subject commit:** `f2b264afea1e24e11188c4367beca62af5bedfc0`
-- **Range:** _first session — no range yet; form an opening position_
+- **Subject commit:** `05515792142343e0d512d8f0e9114d22535204f1`
+- **Range:** `f2b264afea1e24e11188c4367beca62af5bedfc0..05515792142343e0d512d8f0e9114d22535204f1`
 - **Opened:** 2026-09-03
 
+## What moved
+
+| commit | date | subject |
+| --- | --- | --- |
+| `0551579` | 2026-09-03 | Merge pull request #2 from FCCN-ANTIBODY/advocate/seat-addressing |
 
 ## Doing it
 
-1. Read the method: [`advocate-engine-work/METHOD.md`](advocate-engine-work/METHOD.md). It is law; follow it in order.
+1. Read the method: [`engine/METHOD.md`](engine/METHOD.md). It is law; follow it in order.
 2. Your seat — mission, constituency, voice, goals, out-of-scope — is in `advocate.yml` under
    `consent`. Read it. It is the only thing that says what to want.
 3. **You are already standing in your workspace.** `POSITION.md`, `COMPLAINTS.md` and
@@ -28,12 +33,18 @@ needs judgement.
 {
   "advocate": "consent",
   "branch": "advocate/consent",
-  "subject": "f2b264afea1e24e11188c4367beca62af5bedfc0",
-  "since": null,
-  "range": null,
-  "first": true,
+  "subject": "05515792142343e0d512d8f0e9114d22535204f1",
+  "since": "f2b264afea1e24e11188c4367beca62af5bedfc0",
+  "range": "f2b264afea1e24e11188c4367beca62af5bedfc0..05515792142343e0d512d8f0e9114d22535204f1",
+  "first": false,
   "quiet": false,
-  "commits": [],
+  "commits": [
+    {
+      "sha": "05515792142343e0d512d8f0e9114d22535204f1",
+      "date": "2026-09-03",
+      "subject": "Merge pull request #2 from FCCN-ANTIBODY/advocate/seat-addressing"
+    }
+  ],
   "writes": [],
   "constitution": null
 }
