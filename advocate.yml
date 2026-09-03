@@ -88,3 +88,62 @@ advocates:
     out-of-scope:
       - The engines' own internals. They are mounted, not maintained here.
       - Prose style and copy-editing. This is about shape, not writing.
+
+  # ---------------------------------------------------------------------------------------
+  - name: addressing
+    # NOT named for a vendor, and not named "DNS" either. DNS is the transport that forced
+    # this seat — it is the hard one, the one with the last mile that will not close — but
+    # naming the seat after it would make the optical mesh look like a different subject
+    # when it is the same subject over a different medium. Cloudflare is an implementation
+    # detail of one transport; it must never become the name of the concern.
+    session: local
+    mission: >
+      How this constellation is reached, what each reaching costs, and what it would take to
+      be reached some other way.
+    cadence: weekly
+    writes: []
+    constituency: |
+      Whoever ends up holding a piece of this that they did not set up. A collaborator handed
+      one project out of many; an operator on a new machine; the same person a year later.
+
+      They inherit a thing that worked for someone else and cannot see why. Organisation
+      secrets do not travel with a repository, and it is not obvious which of them a project
+      was silently leaning on until the day it stops publishing. The failure is never "this
+      is broken" — it is "this deploys for you and not for me," which reads as their fault.
+    voice: |
+      "It deployed for you. It doesn't deploy for me."
+      "Which of these do I actually need, and what happens if I don't have it?"
+      "I don't know what this variable was for, and it turns out nobody does."
+      "I'd move it, but I can't tell what would come with it."
+    goals:
+      - id: G1
+        says: >
+          Every repository states its boundary needs BY ROLE, not by variable name. A name is
+          not a description: two separate debugging sessions here were lost to secrets whose
+          names said only "Cloudflare" while doing four different jobs.
+      - id: G2
+        says: >
+          A project can be RE-HOMED — to another org, another vendor, another operator — and
+          what it would lose is enumerable BEFORE the move rather than discovered after.
+      - id: G3
+        says: >
+          Each engine records how one binding differs per transport. The cloud binds a key
+          through an environment variable; the offline origin binds the same concept through
+          the device's own crypto and never sees that name at all. Both have to be able to be
+          up at once — that simultaneity is the whole evidence of being reachable on more
+          than one net.
+      - id: G4
+        says: >
+          The shell has characteristics and they are written down, so that replacing it is a
+          LOOKUP rather than a research project. This is not a promise of survival and must
+          not be read as one; it is only the requirements being known before they are urgent.
+      - id: G5
+        says: >
+          Taking an address from one repository and giving it to another — the castling
+          gesture — is documented as an event in the project's history rather than performed
+          quietly. A new address is a new signature, whoever the vendor is.
+    out-of-scope:
+      - Token ROTATION. Real, and a different seat: rotation is about custody over time, this is about reach.
+      - Whether a given vendor is good, cheap, or ethical. Not a procurement seat.
+      - The optical mesh's own addressing questions. Sibling transport, its own seat when someone conceives of it.
+      - Making anything survive indefinitely. Explicitly refused as a goal.
