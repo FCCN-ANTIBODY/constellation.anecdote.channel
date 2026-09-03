@@ -7,8 +7,8 @@ Generated 2026-09-03 by `.advocate-engine/bin/digest.mjs`. Do not edit it — ed
 
 | seat | last spoke | sessions | draft | ready | state |
 | --- | --- | --- | --- | --- | --- |
-| [`consent`](consent.md) | 2026-09-03 | 1 | 0 | 0 | **session owed** |
-| [`presentation`](presentation.md) | 2026-09-03 | 1 | 0 | 0 | **session owed** |
+| [`consent`](consent.md) | 2026-09-03 | 1 | 2 | 0 | up to date |
+| [`presentation`](presentation.md) | 2026-09-03 | 1 | 1 | 0 | up to date |
 | [`addressing`](addressing.md) | — | 0 | 0 | 0 | **session owed** |
 
 ## Asking to graduate
@@ -21,8 +21,6 @@ supposed to sit until it ripens, and a seat is not owed a promotion for having r
 The mechanical half ran and left a work order. Anything can pick it up — a local agent, a
 scheduled routine, or a person with an afternoon.
 
-- `consent` → `advocate/consent` · `sessions/PENDING.md`
-- `presentation` → `advocate/presentation` · `sessions/PENDING.md`
 - `addressing` → `advocate/addressing` · `sessions/PENDING.md`
 
 ```sh
