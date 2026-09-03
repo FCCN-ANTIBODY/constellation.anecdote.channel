@@ -44,14 +44,53 @@ Both must be able to be up at once. That simultaneity is the evidence of being r
 than one net, and it is why an inventory listing only variable names would describe half the system
 and imply the other half was missing.
 
-## Known gaps, as of the seeding survey
+## Instanced behaviour is not canonical behaviour
 
-- `ANTIDOTE_LEDGER_KEY` and `ATLAS_SIGNER_KEY` are **referenced by `civic-node` workflows and exist
-  nowhere that repository can see** — not as repo secrets, not as org secrets.
-- `civic-node` reads `secrets.CLOUDFLARE_ZONE_ID` while the value lives as an org **variable** of
-  that name. A secret and a variable are different namespaces; the read resolves empty.
-- `journal.anecdote.channel` and `judgement` reference **no credentials at all**. That is a property
-  worth keeping deliberately, not an omission.
+The engines are **gloves**: powerless machinery a node puts on so it can act like a Tell, an Atlas,
+an Antidote in official ways. **`civic-node` wears them**, and therefore hosts their workflows — so
+it is the nexus for what the engines *do*, and the credential for an engine's role lives where the
+INSTANCE is, not in the engine's own repository.
+
+An engine's **canonical** repository behaves differently and usually needs far less. Canonical
+`tell.anecdote.channel` serves a page that matters and is fairly inert; `journal.anecdote.channel`
+and `judgement` reference **no credentials at all**. Those are not gaps — they are the engines
+being engines.
+
+So `civic-node` holding seven secrets is not sprawl. It is one node instancing several roles, and
+each secret is the battery for one of them:
+
+| workflow | role being instanced | battery |
+| --- | --- | --- |
+| `antidote-heartbeat`, `antidote-intake` | antidote | `ANTIDOTE_LEDGER_KEY` |
+| `bill`, `register-peer` | atlas | `ATLAS_SIGNER_KEY`, `ATLAS_PR_TOKEN` |
+| `register-self` | tell (registering itself) | `TELL_SIGNER_KEY` |
+| `antibody` | publish + cache | the Cloudflare pair |
+
+**Read a missing battery as an unarmed role, not a broken one.** A node may declare a role before
+it can perform it — `antidote.yml` and `atlas.yml` sit at this node's root while `AGENTS.md` calls
+antidote *skeleton status*. Declaring early is honest; the declaration is a statement of what the
+node is, not a claim that every part of it is wired.
+
+## Where that reading stops being generous
+
+**An unarmed role must not be a role that fires anyway.** Invariant #5 says honest defaults fire
+nothing, and a scheduled workflow whose battery is absent is the counter-example:
+
+- `antidote-heartbeat.yml` **failed on 2026-09-01** and has **no guard** — it reads
+  `ANTIDOTE_LEDGER_KEY`, which exists in neither the repository nor the organisation. A scheduled
+  job failing on a cadence nobody watches is indistinguishable from one that is merely not
+  provisioned yet, which is how it stayed like that.
+- `bill.yml` and `register-peer.yml` read `ATLAS_SIGNER_KEY`, also absent, and have **never run**.
+  Unarmed and unexercised — so nothing has told anyone.
+
+The fix is not necessarily to mint the keys. It is that a workflow for an unarmed role should
+**decline and say so**, the way `acm-sync` does, rather than fail obscurely or wait to.
+
+## One that is a plain mismatch
+
+`civic-node` reads `secrets.CLOUDFLARE_ZONE_ID` while the value exists as an organisation
+**variable** of that name. Secrets and variables are different namespaces; the read resolves empty.
+The third instance of that exact shape in this constellation in one day.
 
 ## Castling — taking an address from one repository and giving it to another
 
