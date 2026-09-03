@@ -7,6 +7,18 @@
 
 version: 1
 
+# Where the council's one readable page goes. The `council` branch is the default and works
+# already — /tree/council renders the index with a page per seat beside it. The wiki is the
+# same hub in the repo's own navigation instead of behind a branch picker.
+#
+# IT NEEDS ONE MANUAL STEP FIRST: GitHub does not create <repo>.wiki.git until a page exists,
+# so until somebody opens the wiki once in a browser and saves anything, there is no remote to
+# push to and publish.sh will say exactly that on every round. Harmless, and a standing
+# reminder rather than a silent failure.
+report:
+  branch: council
+  wiki: true
+
 mission: >
   This node is the constellation's own mailbox and its argument with itself. It exists to be
   looked at. What would make us stop, and what we need in order not to stop — where "us" is
