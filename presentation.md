@@ -1,6 +1,6 @@
 # Seat · presentation
 
-`advocate/presentation` · last spoke **2026-09-03** · 1 session(s) · 1 draft · 0 ready
+`advocate/presentation` · last spoke **2026-09-04** · 2 session(s) · 1 draft · 0 ready
 
 <sub>Copied whole from the branch, which is the authority. Do not edit this page — it is
 overwritten every round.</sub>
@@ -88,28 +88,9 @@ checklist item or a CI check on file-count-vs-README-mentions would. One data po
 isn't enough to know if this should be automated or just asked for — filing it now so it isn't
 re-derived next time the same gap shows up.
 
-## Last session note — 2026-09-03
+## Last session note — 2026-09-04
 
-### 2026-09-03
+### 2026-09-04
 
-Range `f2b264a..0551579` — one commit, the merge of PR #2 (`advocate/seat-addressing`), which
-seated the `addressing` advocate and added a 103-line root file, `BOUNDARY.md`, that it owns.
-
-Read `advocate.yml`'s new `addressing` entry, the full `BOUNDARY.md`, and diffed `README.md` /
-`AGENTS.md` against what's actually at root now. Rewrote `POSITION.md` whole against the three
-goals: G1 (tidiness) clears — the new file is real growth, not clutter nobody chose. G2
-(discoverability) does not — `BOUNDARY.md` isn't linked from anywhere visible, and `README.md`'s
-seat count ("Two, both `session: local`") is now false. G3 stays unmeasured; no data pile exists
-yet to test it against.
-
-Opened `COMPLAINTS.md` and `ASKS.md` for the first time with real content — both were blank
-scaffolding carried from seating. Two complaints (C1, C2), both `open` and `observed` straight
-from the diff, no drafts needed since I could check both directly. One ask (A1), `draft`, since a
-single data point isn't enough to know if the fix should be a checklist or a check.
-
-**Tally:** complaints 2 open, 0 draft, 0 ready. Asks 1 draft.
-
-**What I did not say:** whether `BOUNDARY.md`'s content is right — that's `addressing`'s
-constitution, not mine. Whether `addressing` should exist or is scoped correctly — seating is the
-owners' call. Anything about `consent`, which this range didn't touch.
+Subject unchanged at `0551579`. Nothing merged since the last session; nothing to say.
 
