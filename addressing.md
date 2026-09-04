@@ -1,6 +1,6 @@
 # Seat · addressing
 
-`advocate/addressing` · last spoke **2026-09-03** · 1 session(s) · 5 draft · 0 ready
+`advocate/addressing` · last spoke **2026-09-04** · 2 session(s) · 5 draft · 0 ready
 
 <sub>Copied whole from the branch, which is the authority. Do not edit this page — it is
 overwritten every round.</sub>
@@ -142,58 +142,9 @@ in the workspace it reads, or a way to say plainly that the goal is structurally
 session rather than quietly skipped. This session used the second option. Flagging it rather than
 guessing at whether the empty `.tell-engine` is a workspace-preparation gap or means something.
 
-## Last session note — 2026-09-03
+## Last session note — 2026-09-04
 
-### 2026-09-03 — first session
+### 2026-09-04
 
-**Seated, not reporting.** `PENDING.md` named `first: true`, `range: null` — there is no baseline
-yet, so there is nothing to diff against. This session read the repository as it stands at
-`0551579` and formed an opening `POSITION.md` against the five goals in `advocate.yml`.
-
-Replaces a placeholder session note that was already sitting in this file at session start
-(`"Nothing merged since the last session; nothing to say."`) — that line assumed a range that
-does not exist for a first session, so it was wrong on its face and is overwritten rather than
-carried forward.
-
-## What I read
-
-`README.md`, `AGENTS.md`, `BOUNDARY.md`, `advocate.yml`, `NAME`, `.gitmodules`,
-`.github/workflows/council.yml`, `.advocate-engine/{LOCAL.md,STATUS.md}`, and the root directory
-listing. `.tell-engine` is a mounted submodule with no content checked out — noted, not chased;
-reading `tell.anecdote.channel` directly would be a repository not in this checkout. `civic-node`,
-which `BOUNDARY.md` describes at length, is likewise not in this checkout and was not read.
-
-## What changed
-
-- `POSITION.md` — written whole, first time. G1 and G4 moving (`BOUNDARY.md` exists, is dated
-  today, and does the by-role framing G1 asks for) but with an accuracy problem in that same
-  document: it claims `antidote.yml` and `atlas.yml` sit at this root, and they don't. G2 moving on
-  the same evidence. G3 and G5 reported `unmeasured`, for different reasons each.
-- `COMPLAINTS.md` — three opened, all `draft`, all `source: observed`. None are testimony; nobody
-  relayed anything to this seat yet.
-- `ASKS.md` — two opened, both `draft`. Neither proposes an edit to `advocate.yml` — that file
-  isn't mine to write, so A1 names the gap and stops there.
-
-## Tally
-
-3 draft, 0 open, 0 ready, 0 promoted, 0 answered, 0 withdrawn — across both files. Nothing to move
-yet; this is the session that creates the first thing to move.
-
-## What I deliberately did not say
-
-- Did not treat the `antidote.yml`/`atlas.yml` discrepancy as a verdict on which document is wrong.
-  I don't have git history in this checkout (git access to the subject repo required approval this
-  non-interactive session couldn't get), so I can't say whether those files existed and were
-  removed, or were never there. Recorded only what the checkout currently shows against what
-  `BOUNDARY.md` currently claims.
-- Did not read or guess at `civic-node`'s actual state to check `BOUNDARY.md`'s claims about it
-  (the failing `antidote-heartbeat.yml`, the absent `ATLAS_SIGNER_KEY`, and so on). Those may be
-  exactly right. Confirming them would mean reading a repository not in this checkout, which the
-  method refuses.
-- Did not propose that `advocate.yml` name `BOUNDARY.md` as this seat's constitution, only noted
-  that no seat has one and that the absence is the method's own first finding. Wiring it is a
-  decision for whoever owns that file.
-- Did not write complaints about `presentation`'s or `consent`'s territory (the empty data pile,
-  the absent Atlas) even where `BOUNDARY.md` and `README.md` touch on them — not this
-  constituency's question.
+Subject unchanged at `0551579`. Nothing merged since the last session; nothing to say.
 
