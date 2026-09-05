@@ -1,6 +1,6 @@
 # Seat · consent
 
-`advocate/consent` · last spoke **2026-09-04** · 2 session(s) · 2 draft · 0 ready
+`advocate/consent` · last spoke **2026-09-05** · 3 session(s) · 2 draft · 0 ready
 
 <sub>Copied whole from the branch, which is the authority. Do not edit this page — it is
 overwritten every round.</sub>
@@ -101,9 +101,9 @@ registration PR merges, not after — whether the person it now addresses is tol
 channel, if any. Not a proposed mechanism; just a decision this node currently has nowhere
 to record, because nothing has forced the question yet. Related to C1.
 
-## Last session note — 2026-09-04
+## Last session note — 2026-09-05
 
-### 2026-09-04
+### 2026-09-05
 
 Subject unchanged at `0551579`. Nothing merged since the last session; nothing to say.
 
