@@ -1,6 +1,6 @@
 # Seat · presentation
 
-`advocate/presentation` · last spoke **2026-09-05** · 3 session(s) · 1 draft · 0 ready
+`advocate/presentation` · last spoke **2026-09-06** · 4 session(s) · 1 draft · 0 ready
 
 <sub>Copied whole from the branch, which is the authority. Do not edit this page — it is
 overwritten every round.</sub>
@@ -88,9 +88,9 @@ checklist item or a CI check on file-count-vs-README-mentions would. One data po
 isn't enough to know if this should be automated or just asked for — filing it now so it isn't
 re-derived next time the same gap shows up.
 
-## Last session note — 2026-09-05
+## Last session note — 2026-09-06
 
-### 2026-09-05
+### 2026-09-06
 
 Subject unchanged at `0551579`. Nothing merged since the last session; nothing to say.
 
