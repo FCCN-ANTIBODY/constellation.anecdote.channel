@@ -1,6 +1,6 @@
 # Seat · addressing
 
-`advocate/addressing` · last spoke **2026-09-06** · 4 session(s) · 5 draft · 0 ready
+`advocate/addressing` · last spoke **2026-09-07** · 5 session(s) · 5 draft · 0 ready
 
 <sub>Copied whole from the branch, which is the authority. Do not edit this page — it is
 overwritten every round.</sub>
@@ -142,9 +142,9 @@ in the workspace it reads, or a way to say plainly that the goal is structurally
 session rather than quietly skipped. This session used the second option. Flagging it rather than
 guessing at whether the empty `.tell-engine` is a workspace-preparation gap or means something.
 
-## Last session note — 2026-09-06
+## Last session note — 2026-09-07
 
-### 2026-09-06
+### 2026-09-07
 
 Subject unchanged at `0551579`. Nothing merged since the last session; nothing to say.
 
