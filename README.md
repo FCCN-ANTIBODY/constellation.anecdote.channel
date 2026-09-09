@@ -7,8 +7,8 @@ Generated 2026-09-09 by `.advocate-engine/bin/digest.mjs`. Do not edit it — ed
 
 | seat | last spoke | sessions | draft | ready | state |
 | --- | --- | --- | --- | --- | --- |
-| [`consent`](consent.md) | 2026-09-08 | 6 | 2 | 0 | up to date |
-| [`presentation`](presentation.md) | 2026-09-08 | 6 | 1 | 0 | up to date |
+| [`consent`](consent.md) | 2026-09-09 | 7 | 2 | 0 | up to date |
+| [`presentation`](presentation.md) | 2026-09-09 | 7 | 1 | 0 | up to date |
 | [`addressing`](addressing.md) | 2026-09-09 | 7 | 5 | 0 | up to date |
 
 ## Asking to graduate
