@@ -1,60 +1,56 @@
 # POSITION — consent
 
-*Where this node stands against my goals, as of 2026-09-03 (subject `0551579`).*
+*Where this node stands against my goals, as of 2026-09-11 (subject `ebf5871`).*
 
-This is my first substantive read of the repository — the seating session before this one
-wrote nothing, and the session between wrote only "nothing merged." So this is an opening
-position, not a delta, even though the work order that produced it wasn't marked `first`.
+## The mechanism I watch still does not exist here
 
-## The mechanism I watch does not exist here yet
+Nothing has changed on this point since the last position. `README.md`'s "Not wired" section
+still reads: **no Tell configuration, no keys, no piles, no polls.** Nobody can register a pile
+to this node's mailbox — consensually or otherwise — because there is no mailbox in service.
+The injury my constituency exists to represent has no floor to stand on here yet.
 
-Per `README.md`'s own "Not wired" section: **no Tell configuration, no keys, no piles, no
-polls.** Nobody can register a pile to this node's mailbox — consensually or otherwise —
-because there is no mailbox in service yet. The injury my constituency exists to represent
-(a pile registered to a Tell by someone other than its owner, mail arriving for a person who
-agreed to nothing) has no floor to stand on here. It is a real risk in the design this node
-is an example *of*, not yet a fact about this node's own state.
+All three goals remain **unmeasured**, literally, not as a placeholder:
 
-That makes all three goals currently **unmeasured**, and I mean that literally, not as a
-placeholder:
-
-- **G1** (nobody can be made to check) — unmeasured. No registration path exists to test
-  whether checking is ever made costly.
-- **G2** (the scaling case stated wherever the single case is) — unmeasured. There is no
-  single case in this repository yet to check for a missing scaling companion.
-- **G3** (whoever holds unread mail for an unconsenting recipient is named, for how long) —
-  unmeasured. Nobody holds anything; there is no mail.
-
-None of this is a complaint. An inert mechanism cannot fail my constituency, and reporting a
-goal as met because the feature that would violate it hasn't shipped would be exactly the
-kind of estimate-to-fill-a-row the method warns against.
+- **G1** (nobody can be made to check) — unmeasured. No registration path exists to test it.
+- **G2** (the scaling case stated wherever the single case is) — unmeasured. No single case
+  exists yet to check for a missing scaling companion.
+- **G3** (whoever holds unread mail is named, for how long) — unmeasured. Nobody holds
+  anything; there is no mail.
 
 ## What moved in this range
 
-The range (`f2b264a..0551579`) merged PR #2: seating a new `addressing` advocate and adding
-`BOUNDARY.md`, an inventory of the node's deployment credentials and re-homing costs. My
-three questions on it:
+The range (`0551579..ebf5871`) merged PR #3, "roll the advocate pin": two changes.
 
-- **Does my constituency notice this?** No. It is about who holds *organisation secrets*
-  and what re-homing a deploy costs — not about who holds a *person's mail* or what
-  registering them costs. `encryption and key custody` is explicitly named in my own
-  `out-of-scope`.
-- **Does it move a goal, or away from one?** No.
-- **Does the repository now do something it never said it would?** No — a seat being added
-  is consistent with `advocate.yml`'s own framing that both original seats were drafts
-  inviting more.
+1. **`advocate.yml` gained a `report:` block** (`branch: council`, `wiki: true`) — where the
+   council's own readable index of seats gets published, plus a note that the GitHub wiki
+   needs one manual save before it exists as a remote.
+2. **`.advocate-engine`'s pin advanced** (`0173104` → `7a8d391`) — the engine submodule itself,
+   which I do not read; that repository is not this checkout.
 
-One thing worth naming without treating it as a finding: `BOUNDARY.md` asks, almost
-verbatim, "who is holding all this, and for how long, and why is it their problem?" — my own
-seat's voice line, applied to a different kind of custody (credentials, not unread mail). I
-don't read that as drift into my territory; the two customs are genuinely different
-questions. But if a future session sees the language of "who holds this and for how long"
-start doing double duty across seats without the reader being able to tell which custody is
-meant, that would be worth a complaint. Not yet.
+Against my three questions:
+
+- **Does my constituency notice this?** No. `report:` decides where *advocates' own
+  self-description* gets published — not who holds mail, not who gets registered, not what
+  checking costs. It publishes arguments, not registrations.
+- **Does it move a goal, or away from one?** No. Nothing here creates a pile, a Tell, or a
+  recipient. It cannot make checking costly or name a custodian of mail that does not exist.
+- **Does the repository now do something it never said it would?** No.
+
+One thing worth naming without treating it as a finding, the same way I flagged `BOUNDARY.md`'s
+echo last time: `report:` means my own `COMPLAINTS.md` — including C1, which is *about* whether
+someone would ever find out they'd been registered — will now be readable from a public wiki
+once someone saves it once. That is not an answer to C1. C1 asks whether the person my
+constituency represents learns about *their own* registration; publishing my speech about the
+question is not the same as answering it for them. I want the distinction on record so a future
+session doesn't mistake "the advocate is visible" for "the recipient is notified."
 
 ## What I did not say
 
-I did not go looking in `.tell-engine/` or `.advocate-engine/` for how registration would
-work once wired — both are unpopulated submodule directories in this checkout, and reading
-them would mean reading a repository that isn't here. That's a question for whoever seats
-this advocate in `tell.anecdote.channel` itself, not for me here.
+I noticed `README.md`'s "The seats" section still says "Two, both `session: local`" and
+describes only `consent` and `presentation` — `addressing` was seated in the prior range (PR #2)
+and isn't mentioned there. That is a real gap, but it is `presentation`'s question ("does the
+node's shape still fit what it's doing"), not mine — my constituency has no stake in whether the
+seat count in a README is current. Not raising it as my complaint.
+
+I did not read `.advocate-engine` itself to see what the pin bump changed. That repository isn't
+in this checkout; a question about it is not my question, per the method's scope rule.
