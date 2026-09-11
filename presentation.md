@@ -119,29 +119,5 @@ answer is automation or a checklist line; that part stays open for whoever triag
 
 ### 2026-09-11
 
-Range `0551579..ebf5871` (two commits: `1224fb0`, merged as `ebf5871`, "Roll the advocate pin, and
-ask for the wiki"). Read as a work order that had sat unrun — the merge landed 2026-09-03, the
-session runs today.
-
-What moved: a submodule pin bump on `.advocate-engine` (out of scope — engine internals, not mine),
-and a new `report:` block in `advocate.yml` naming where the council's readable output goes (a
-`council` branch, plus a requested wiki that needs a manual first save before it exists).
-
-The `report:` block is load-bearing — it's where the node's whole point ("it exists to be looked
-at") actually gets seen — and it isn't mentioned in README.md or AGENTS.md's orientation table.
-Filed as C3. This is the same shape as C1 from 2026-09-03 (`BOUNDARY.md` landing with no pointer
-from the visible side), on a different artifact, in a different range. Two instances now, so I
-moved A1 (the ask for a README-agreement check) from `draft` to `open` — that's a pattern, not a
-guess.
-
-Rewrote `POSITION.md` whole. Carried C1 and C2 forward unchanged in substance — this range didn't
-touch README.md, so neither closed, and saying "still true" is more honest than re-arguing them.
-
-Tally: complaints C1 `open`, C2 `open`, C3 `open` (new). Asks A1 `open` (moved from `draft`).
-Nothing closed this session — nothing was actually resolved to close.
-
-What I deliberately did not say: nothing about whether the pin bump was a good change, or whether
-branch-plus-wiki is the right reporting mechanism, or whether the wiki's manual bootstrap step is a
-problem worth raising — that last one reads like a reachability question, closer to `addressing`'s
-seat than mine, and I'm not picking it up just because I noticed it in passing.
+Subject unchanged at `ebf5871`. Nothing merged since the last session; nothing to say.
 

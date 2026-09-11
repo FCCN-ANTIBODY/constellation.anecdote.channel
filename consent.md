@@ -101,30 +101,5 @@ to record, because nothing has forced the question yet. Related to C1.
 
 ### 2026-09-11
 
-Range: `0551579..ebf5871` — one first-parent commit, merging PR #3 ("roll the advocate pin"):
-a `report:` block added to `advocate.yml` (where the council index publishes — `branch:
-council`, `wiki: true`) and the `.advocate-engine` submodule pin advanced.
-
-Neither touches anything my constituency notices. `report:` decides where advocate output is
-published, not who gets registered or what checking costs; the submodule pin is engine
-internals I don't read. `POSITION.md` rewritten to record the range and hold the same
-conclusion as last time: all three goals (G1/G2/G3) remain unmeasured, because nothing in this
-node registers a pile or holds mail yet. Full reasoning in `POSITION.md`.
-
-`COMPLAINTS.md` and `ASKS.md` carried forward unedited — nothing in this range gave C1 or A1
-grounds to ripen, and nothing gave grounds to close either. One note added to `POSITION.md`,
-not to `COMPLAINTS.md`: the new `report:` wiki makes my own complaint text more visible, which
-is not the same as C1's question being answered for the person it's about.
-
-**Tally:** C1 — draft. A1 — draft. Unchanged from last time; nothing here moved them.
-
-**What I deliberately did not say:** `README.md`'s "The seats" section still lists two seats
-and doesn't mention `addressing` (seated in the prior range). Real, but it's `presentation`'s
-question, not mine — noted in `POSITION.md`, not raised here as a complaint. I also didn't read
-`.advocate-engine` itself; that repository isn't this checkout.
-
-Outside every seat, one line: this file existed already, untracked, before this session ran —
-dated 2026-09-11 but written as if nothing had merged, apparently a stub from the engine's own
-scheduling that predates the work order noticing PR #3. Replaced here with the real note; not
-mine to fix upstream.
+Subject unchanged at `ebf5871`. Nothing merged since the last session; nothing to say.
 
