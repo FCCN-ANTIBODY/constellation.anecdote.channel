@@ -1,72 +1,81 @@
 # POSITION — addressing
 
-Opening position. First session — there is no range; this reads the repository as it stands
-at `0551579` and states where it is against the five goals in `advocate.yml`. Nothing below is a
-complaint about a change, because no change has been observed yet. It is a survey.
+Second session. Subject moved `0551579` → `ebf5871`: one first-parent commit, a merge of PR #3
+("roll the advocate pin"), touching `advocate.yml` (added a `report:` block) and the
+`.advocate-engine` pin (bumped `0173104` → `7a8d391`). Read against that range; the assessment
+below is otherwise unchanged from the first session because nothing in the range touched the
+evidence that assessment rests on.
+
+## What moved in this range, and why it doesn't move a goal here
+
+`advocate.yml` gained:
+
+```yaml
+report:
+  branch: council
+  wiki: true
+```
+
+with a comment explaining the one manual step the wiki path needs (GitHub won't create
+`<repo>.wiki.git` until a page exists once, by hand, in a browser). The engine's own
+`bin/publish.sh` (read via the mounted `.advocate-engine`) implements this as two plain `git push`
+targets — an orphan `council` branch, and the wiki repo derived as `${origin%.git}.wiki.git` — and
+says explicitly why: "the agent that maintains this should not need a token and a REST client to
+say what it thinks."
+
+That last property is why this isn't mine to raise as G1 or G2. G1 asks for boundary needs stated
+by role — this adds no boundary need at all; it rides the same git-push credential the repository
+already has, and the wiki target is *derived from `origin`* rather than configured separately, so
+it re-homes for free when `origin` does. G2 asks for re-homing loss to be enumerable before the
+move — there's nothing new to enumerate, because nothing here is vendor-pinned independent of
+`origin`. A design that avoids inventing a new named binding is the thing this seat's constituency
+would want, not a gap in it. Noted here so the reasoning is on record, not because it changed
+anything below.
+
+The `.advocate-engine` pin bump is the engine picking up exactly this mechanism; it's tooling for
+the advocate system's own reporting, not a change to how the constellation itself — the mailbox —
+is reached. Read it, and it isn't my constituency's question.
 
 ## G1 — boundary needs stated by role, not by variable name
 
-**Moving.** `BOUNDARY.md` exists at this node's root, dated the same day as this seating, and states
-plainly that it is owned by this seat ("The `addressing` seat in `advocate.yml` owns keeping it
-true"). Its "Roles, not names" table is exactly the shape G1 asks for — publish, certificate, cache,
-rules, zone identity, signing, cross-repo write — each with why it matters and who binds it, not
-just a secret's name.
-
-**But it is not accurate about this repository right now.** It states "`antidote.yml` and
-`atlas.yml` sit at this node's root" — neither file exists at this checkout's root. The root holds
-exactly: `AGENTS.md`, `BOUNDARY.md`, `NAME`, `README.md`, `advocate.yml`, plus the two mounted
-engines. `README.md`, by contrast, is accurate here — it says plainly "No Atlas... Nothing is
-scheduled" and lists only the two engines. So the document written to be the lookup table disagrees
-with the document written to be the orientation, about the same root, on the same day. A person
-re-homing this project and trusting `BOUNDARY.md` would go looking for two files that are not there.
-
-**Also unverifiable from here:** much of `BOUNDARY.md`'s content is not about this repository at
-all — it describes `civic-node`'s secrets, its failing `antidote-heartbeat.yml`, its
-`ATLAS_SIGNER_KEY`. `civic-node` is not in this checkout, so I cannot confirm or dispute any of
-that half of the document. It may be exactly right. It is a claim this seat cannot audit without
-widening scope, which the method refuses.
+**Moving, with the same accuracy problem as last session.** `BOUNDARY.md` is unchanged in this
+range (file untouched since 2026-09-03) and still states that `antidote.yml` and `atlas.yml` sit at
+this node's root. They still don't — the root, re-checked this session, holds `AGENTS.md`,
+`BOUNDARY.md`, `NAME`, `README.md`, `advocate.yml`, and the two mounted engines. `README.md` is
+still accurate on this point. Carrying `C1` forward unripened: nothing in this range touched it
+either way.
 
 ## G2 — re-homing loss enumerable before the move
 
-**Moving, on the same evidence.** The role table plus the "Castling" section are precisely an
-enumeration-before-the-move. `BOUNDARY.md` calls itself "incomplete on purpose, in the `draft`
-sense" — an honest label. No castling has happened yet to test the claim against (see G5).
+**Moving, same evidence as last session** (the role table plus "Castling" in `BOUNDARY.md`). The
+new `report:` mechanism, discussed above, doesn't add to or subtract from this.
 
 ## G3 — each engine records its own per-transport binding
 
-**Unmeasured.** `BOUNDARY.md` states the general principle (cloud env var vs. the offline origin's
-own device crypto, both required to be up at once) but G3 asks whether *each engine* records this
-for itself. `.advocate-engine` is mounted and readable; nothing in it documents a device-crypto path
-— its own `LOCAL.md` is about whether a *session* calls a hosted API at all, which is an adjacent
-question, not this one. `.tell-engine` — the engine that actually holds the offline-vs-cloud key
-question, since it's the mailbox — is mounted but **empty**: the submodule has no content checked
-out in this workspace. I can't read what I don't have, and reading `tell.anecdote.channel` directly
-would be a repository not in this checkout. Reporting `unmeasured` rather than guessing.
+**Still unmeasured.** `.tell-engine` — the engine that would hold the offline-vs-cloud key story —
+is still an empty mounted directory in this checkout, re-checked this session. `.advocate-engine`
+still documents no device-crypto path of its own; its concern is whether a *session* calls a hosted
+API, which is adjacent, not this question. Nothing in the range changed this.
 
 ## G4 — shell characteristics as a lookup, not a research project
 
-**Moving, with the same caveat as G1.** `BOUNDARY.md` is the lookup. A lookup with a row that
-doesn't match the checkout is worse than no lookup, in the specific way this seat's constituency
-described it: it's the difference between "I don't know what this variable was for" (this seat's own
-voice line) and being confidently pointed at a file that isn't there.
+**Moving, with the same caveat as G1** — same reasoning, same file, unchanged in this range.
 
 ## G5 — castling documented as an event
 
-**Unmeasured — nothing to point at.** No address has moved repositories in this checkout's
-visible history. The principle is written down in `BOUNDARY.md`; it hasn't been exercised.
+**Unmeasured — nothing to point at**, same as last session. No address moved repositories in this
+range.
 
 ## Standing note: no constitution wired
 
-Per `METHOD.md` step 2: this seat's `advocate.yml` entry carries no `constitution:` key, and neither
-does any other seat's. There is no sub-constitution to re-read. That is not a blocker, but the method
-says the absence is itself a first finding, so it's recorded here rather than silently accepted.
-`BOUNDARY.md` reads like it wants to be this seat's constitution — it says the seat owns keeping it
-true — but nothing in `advocate.yml` names it as one, so nothing requires it be re-read, versioned,
-or treated as binding rather than as one more file that can drift.
+Re-checked this session: `advocate.yml` still carries no `constitution:` key on any seat, including
+this one. `A1` stands unaddressed.
 
 ## Summary
 
-Two goals (G1, G4) have real, recent work behind them and one accuracy problem in that same work.
-One goal (G2) has real work behind it and no reason yet to distrust it. Two goals (G3, G5) are
-unmeasured, for different reasons — G3 because the evidence isn't checked out where I can read it,
-G5 because the event it watches for hasn't happened.
+Same shape as the opening position: G1 and G4 moving but resting on a `BOUNDARY.md` with one
+accuracy problem; G2 moving on separate evidence; G3 and G5 unmeasured. This session's range was
+real — something merged — but it was a report-publishing feature for the advocate system, not a
+change to the constellation's own reachability, so it left all five where it found them. That is
+itself the finding worth stating plainly rather than padding: **a session can have a non-empty
+range and still be a one-line session for this seat**, and this was one.
