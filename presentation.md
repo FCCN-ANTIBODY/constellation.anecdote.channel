@@ -1,6 +1,6 @@
 # Seat · presentation
 
-`advocate/presentation` · last spoke **2026-09-11** · 9 session(s) · 0 draft · 0 ready
+`advocate/presentation` · last spoke **2026-09-12** · 10 session(s) · 0 draft · 0 ready
 
 <sub>Copied whole from the branch, which is the authority. Do not edit this page — it is
 overwritten every round.</sub>
@@ -115,9 +115,9 @@ block) are two separate merges, in two different ranges, with the same shape —
 a one-off, and it's why I now mean this rather than just floating it. Still don't know whether the
 answer is automation or a checklist line; that part stays open for whoever triages this.
 
-## Last session note — 2026-09-11
+## Last session note — 2026-09-12
 
-### 2026-09-11
+### 2026-09-12
 
 Subject unchanged at `ebf5871`. Nothing merged since the last session; nothing to say.
 
