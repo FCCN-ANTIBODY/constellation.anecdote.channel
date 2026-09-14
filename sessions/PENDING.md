@@ -5,15 +5,17 @@ prepared, the pin is recorded, and the range below is what moved. What is missin
 needs judgement.
 
 - **Advocate:** `presentation`  ·  **Branch:** `advocate/presentation`
-- **Subject commit:** `ebf58718a64e823ce76c6e1e804685c78198091e`
-- **Range:** `05515792142343e0d512d8f0e9114d22535204f1..ebf58718a64e823ce76c6e1e804685c78198091e`
-- **Opened:** 2026-09-07
+- **Subject commit:** `1e5ee750153c4721fb705f04e52f6a4d32aa55ef`
+- **Range:** `ebf58718a64e823ce76c6e1e804685c78198091e..1e5ee750153c4721fb705f04e52f6a4d32aa55ef`
+- **Mail:** _no petition space — nothing addressed here_
+- **Opened:** 2026-09-14
 
 ## What moved
 
 | commit | date | subject |
 | --- | --- | --- |
-| `ebf5871` | 2026-09-03 | Merge pull request #3 from FCCN-ANTIBODY/roll-the-advocate-pin |
+| `1e5ee75` | 2026-09-11 | Merge pull request #5 from FCCN-ANTIBODY/bump-engine-for-mail |
+| `12d664f` | 2026-09-11 | Merge pull request #4 from FCCN-ANTIBODY/mail-that-cannot-be-delivered |
 
 ## Doing it
 
@@ -23,8 +25,8 @@ needs judgement.
 3. **You are already standing in your workspace.** `POSITION.md`, `COMPLAINTS.md` and
    `ASKS.md` are here, carried forward from last time. Rewrite `POSITION.md` whole; carry the
    other two forward with your edits.
-4. Write `sessions/2026-09-07.md` — the range, what changed, and
-   what you deliberately did **not** say.
+4. Write `sessions/2026-09-14.md` — the range, what changed, what
+   you did with each unread petition, and what you deliberately did **not** say.
 5. **Delete this file.** An order left behind reads as a session still owed.
 6. Commit on this branch and push. Never merge it into `main`.
 
@@ -33,19 +35,29 @@ needs judgement.
 {
   "advocate": "presentation",
   "branch": "advocate/presentation",
-  "subject": "ebf58718a64e823ce76c6e1e804685c78198091e",
-  "since": "05515792142343e0d512d8f0e9114d22535204f1",
-  "range": "05515792142343e0d512d8f0e9114d22535204f1..ebf58718a64e823ce76c6e1e804685c78198091e",
+  "subject": "1e5ee750153c4721fb705f04e52f6a4d32aa55ef",
+  "since": "ebf58718a64e823ce76c6e1e804685c78198091e",
+  "range": "ebf58718a64e823ce76c6e1e804685c78198091e..1e5ee750153c4721fb705f04e52f6a4d32aa55ef",
   "first": false,
   "quiet": false,
   "commits": [
     {
-      "sha": "ebf58718a64e823ce76c6e1e804685c78198091e",
-      "date": "2026-09-03",
-      "subject": "Merge pull request #3 from FCCN-ANTIBODY/roll-the-advocate-pin"
+      "sha": "1e5ee750153c4721fb705f04e52f6a4d32aa55ef",
+      "date": "2026-09-11",
+      "subject": "Merge pull request #5 from FCCN-ANTIBODY/bump-engine-for-mail"
+    },
+    {
+      "sha": "12d664fd05b8410f2e2435cf789b1aeb7fdbfae0",
+      "date": "2026-09-11",
+      "subject": "Merge pull request #4 from FCCN-ANTIBODY/mail-that-cannot-be-delivered"
     }
   ],
   "writes": [],
-  "constitution": null
+  "constitution": null,
+  "petitions": {
+    "address": null,
+    "filed": 0,
+    "unread": 0
+  }
 }
 ```
