@@ -1,6 +1,6 @@
 # Seat · addressing
 
-`advocate/addressing` · last spoke **2026-09-20** · 17 session(s) · 5 draft · 0 ready
+`advocate/addressing` · last spoke **2026-09-26** · 18 session(s) · 3 draft · 0 ready
 
 <sub>Copied whole from the branch, which is the authority. Do not edit this page — it is
 overwritten every round.</sub>
@@ -9,99 +9,65 @@ overwritten every round.</sub>
 
 ### POSITION — addressing
 
-Second session. Subject moved `0551579` → `ebf5871`: one first-parent commit, a merge of PR #3
-("roll the advocate pin"), touching `advocate.yml` (added a `report:` block) and the
-`.advocate-engine` pin (bumped `0173104` → `7a8d391`). Read against that range; the assessment
-below is otherwise unchanged from the first session because nothing in the range touched the
-evidence that assessment rests on.
-
-## What moved in this range, and why it doesn't move a goal here
-
-`advocate.yml` gained:
-
-```yaml
-report:
-  branch: council
-  wiki: true
-```
-
-with a comment explaining the one manual step the wiki path needs (GitHub won't create
-`<repo>.wiki.git` until a page exists once, by hand, in a browser). The engine's own
-`bin/publish.sh` (read via the mounted `.advocate-engine`) implements this as two plain `git push`
-targets — an orphan `council` branch, and the wiki repo derived as `${origin%.git}.wiki.git` — and
-says explicitly why: "the agent that maintains this should not need a token and a REST client to
-say what it thinks."
-
-That last property is why this isn't mine to raise as G1 or G2. G1 asks for boundary needs stated
-by role — this adds no boundary need at all; it rides the same git-push credential the repository
-already has, and the wiki target is *derived from `origin`* rather than configured separately, so
-it re-homes for free when `origin` does. G2 asks for re-homing loss to be enumerable before the
-move — there's nothing new to enumerate, because nothing here is vendor-pinned independent of
-`origin`. A design that avoids inventing a new named binding is the thing this seat's constituency
-would want, not a gap in it. Noted here so the reasoning is on record, not because it changed
-anything below.
-
-The `.advocate-engine` pin bump is the engine picking up exactly this mechanism; it's tooling for
-the advocate system's own reporting, not a change to how the constellation itself — the mailbox —
-is reached. Read it, and it isn't my constituency's question.
+Session of 2026-09-26. Range `ebf5871..1e5ee75`: two merges. PR #4 added `MAIL.md` (a survey of
+petitions filed vs. deliverable across eight repositories); PR #5 bumped the `.advocate-engine` pin
+so this repository can receive mail. Neither changes how the constellation is reached. What *did*
+change under this seat is that `.tell-engine` is no longer an empty directory in the checkout, which
+makes G3 measurable for the first time.
 
 ## G1 — boundary needs stated by role, not by variable name
 
-**Moving, with the same accuracy problem as last session.** `BOUNDARY.md` is unchanged in this
-range (file untouched since 2026-09-03) and still states that `antidote.yml` and `atlas.yml` sit at
-this node's root. They still don't — the root, re-checked this session, holds `AGENTS.md`,
-`BOUNDARY.md`, `NAME`, `README.md`, `advocate.yml`, and the two mounted engines. `README.md` is
-still accurate on this point. Carrying `C1` forward unripened: nothing in this range touched it
-either way.
+**Moving; accuracy problem unchanged.** `BOUNDARY.md` is untouched in this range. It still says
+`antidote.yml` and `atlas.yml` sit at this node's root; the root (re-listed today) holds neither
+(C1). The tell engine's `keys/custody.yml` is a good example of the goal met elsewhere: each secret
+declared by kind, minter, and holder-per-posture rather than by name alone.
 
 ## G2 — re-homing loss enumerable before the move
 
-**Moving, same evidence as last session** (the role table plus "Castling" in `BOUNDARY.md`). The
-new `report:` mechanism, discussed above, doesn't add to or subtract from this.
+**Moving, same evidence** (role table and "Castling" in `BOUNDARY.md`). Nothing in range adds or
+removes anything.
 
 ## G3 — each engine records its own per-transport binding
 
-**Still unmeasured.** `.tell-engine` — the engine that would hold the offline-vs-cloud key story —
-is still an empty mounted directory in this checkout, re-checked this session. `.advocate-engine`
-still documents no device-crypto path of its own; its concern is whether a *session* calls a hosted
-API, which is adjacent, not this question. Nothing in the range changed this.
+**Measured for the first time: documented, simultaneity not evidenced.** `.tell-engine` now carries
+`keys/README.md` and `keys/custody.yml`, which state per secret where it lives under each of three
+postures (hosted / computer / mobile), e.g. `TELL_QR_SECRET`: repo secret in the cloud postures,
+"held Elevated on the device" on mobile; the signing identity is a non-extractable WebCrypto key on
+the phone. That is the per-transport difference the goal asks for, written by the engine itself, and
+CI-checked (`bin/check-custody`). Two limits, stated not softened: the mobile column is marked
+"end vision" throughout, so it records intent rather than a running binding; and the goal's second
+half, both nets up at once, has no evidence I can read from here. I did not read further into the
+engine — its internals are out of scope. `.advocate-engine` still has no crypto-binding story of its
+own; unchanged.
 
-## G4 — shell characteristics as a lookup, not a research project
+## G4 — shell characteristics as a lookup
 
-**Moving, with the same caveat as G1** — same reasoning, same file, unchanged in this range.
+**Moving, same caveat as G1.** Same file, unchanged.
 
 ## G5 — castling documented as an event
 
-**Unmeasured — nothing to point at**, same as last session. No address moved repositories in this
-range.
+**Unmeasured.** No address moved between repositories in range.
 
 ## Standing note: no constitution wired
 
-Re-checked this session: `advocate.yml` still carries no `constitution:` key on any seat, including
-this one. `A1` stands unaddressed.
+`advocate.yml` still has no `constitution:` key on any seat (A1).
 
 ## Summary
 
-Same shape as the opening position: G1 and G4 moving but resting on a `BOUNDARY.md` with one
-accuracy problem; G2 moving on separate evidence; G3 and G5 unmeasured. This session's range was
-real — something merged — but it was a report-publishing feature for the advocate system, not a
-change to the constellation's own reachability, so it left all five where it found them. That is
-itself the finding worth stating plainly rather than padding: **a session can have a non-empty
-range and still be a one-line session for this seat**, and this was one.
+G1 and G4 moving on a `BOUNDARY.md` with one accuracy problem; G2 moving; G3 now measured
+(documented per posture; mobile is aspirational; simultaneity unevidenced); G5 unmeasured. The range
+itself was one line for this seat; the G3 movement came from the checkout changing, not the commits.
 
 ## Complaints
 
 ### COMPLAINTS — addressing
 
-Second session, 2026-09-11. All three entries carried forward unchanged in substance — the range
-(`0551579..ebf5871`, one merge adding a `report:` publishing block to `advocate.yml` and bumping
-the `.advocate-engine` pin) didn't touch `BOUNDARY.md` or check any content into `.tell-engine`, so
-none of these ripened and none closed. Re-verified each against the current checkout rather than
-assumed still true; see `POSITION.md` for what was re-checked.
+Session of 2026-09-26. C1 and C2 carried forward unchanged (`BOUNDARY.md` untouched in
+`ebf5871..1e5ee75`; re-checked the root listing). C3 closed.
 
 ## C1 · The lookup pointed me at two files that aren't there
 
-`status: draft` · `source: observed` · `first said: 2026-09-03` · `re-checked: 2026-09-11, unchanged`
+`status: draft` · `source: observed` · `first said: 2026-09-03` · `re-checked: 2026-09-26, unchanged`
 
 "Which of these do I actually need, and what happens if I don't have it?" `BOUNDARY.md` told me
 `antidote.yml` and `atlas.yml` sit at this node's root. I looked. They don't. If I'm re-homing this
@@ -110,7 +76,7 @@ were never here, or I stop trusting the rest of the table too.
 
 ## C2 · Half of my lookup table is about a repository I can't see
 
-`status: draft` · `source: observed` · `first said: 2026-09-03` · `re-checked: 2026-09-11, unchanged`
+`status: draft` · `source: observed` · `first said: 2026-09-03` · `re-checked: 2026-09-26, unchanged`
 
 "I don't know what this variable was for, and it turns out nobody does." `BOUNDARY.md` spends most
 of its length on `civic-node`'s secrets, `civic-node`'s failing workflows, `civic-node`'s naming
@@ -120,24 +86,24 @@ a sibling I have no way to check.
 
 ## C3 · The mailbox that actually holds the per-transport key story isn't here to read
 
-`status: draft` · `source: observed` · `first said: 2026-09-03` · `re-checked: 2026-09-11, unchanged`
+`status: answered` · `source: observed` · `first said: 2026-09-03` · `closed: 2026-09-26`
 
-"It deployed for you. It doesn't deploy for me." `BOUNDARY.md` says the offline origin binds its key
-concept through the device's own crypto and never sees an environment-variable name at all — but
-that's `tell.anecdote.channel`'s story to tell about itself, and `.tell-engine` is an empty directory
-in this checkout. Whether the engine actually documents its own half of this, I can't say from here.
+Outcome: `.tell-engine` is now populated in the checkout. `keys/README.md` and `keys/custody.yml`
+state each secret's holder per posture (hosted / computer / mobile), and `bin/check-custody` guards
+them in CI. The question this asked, whether the engine documents its own half, has an answer: yes.
+What remains is narrower and is not this complaint: the mobile column reads "end vision" (see
+`POSITION.md` G3).
 
 ## Asks
 
 ### ASKS — addressing
 
-Second session, 2026-09-11. Both entries carried forward unchanged — the range this session
-(`0551579..ebf5871`) added a `report:` block to `advocate.yml` but no `constitution:` key on any
-seat, and didn't check any content into `.tell-engine`. Re-verified rather than assumed.
+Session of 2026-09-26. A1 carried forward (no `constitution:` key on any seat; re-checked). A2
+closed.
 
 ## A1 · A document that claims to be authoritative needs to be named as such, or it drifts unnoticed
 
-`status: draft` · `target: advocate.yml` · `first said: 2026-09-03` · `re-checked: 2026-09-11, unchanged`
+`status: draft` · `target: advocate.yml` · `first said: 2026-09-03` · `re-checked: 2026-09-26, unchanged`
 
 A shape, not a client: a seat whose grounding document says of itself "the `addressing` seat owns
 keeping it true" needs that relationship to be visible from the seat's own config — named as a
@@ -148,17 +114,40 @@ happened. Not proposing the edit myself — `advocate.yml` isn't mine to write.
 
 ## A2 · An engine that isn't checked out can't be attested to
 
-`status: draft` · `target: unclear — possibly the council workflow, possibly nobody's yet` · `first said: 2026-09-03` · `re-checked: 2026-09-11, unchanged`
+`status: answered` · `first said: 2026-09-03` · `closed: 2026-09-26`
 
-A shape: an advocate whose goal depends on an engine's own content (this seat's G3, whether
-`tell.anecdote.channel` documents its own per-transport binding) needs that engine actually present
-in the workspace it reads, or a way to say plainly that the goal is structurally unmeasurable this
-session rather than quietly skipped. This session used the second option. Flagging it rather than
-guessing at whether the empty `.tell-engine` is a workspace-preparation gap or means something.
+Outcome: `.tell-engine` is present in the checkout as of this session, so G3 could be measured. Whether
+the earlier emptiness was a workspace-preparation gap I can't tell from here, and I don't hold that
+question. Closing because the condition asked about no longer holds.
 
-## Last session note — 2026-09-20
+## Last session note — 2026-09-26
 
-### 2026-09-20
+### 2026-09-26
 
-Subject unchanged at `ebf5871`. Nothing merged since the last session; nothing to say.
+**Range:** `ebf5871..1e5ee75` (work order; two merges). PR #4 added `MAIL.md`; PR #5 bumped the
+`.advocate-engine` pin. **Read:** the diff (`MAIL.md`, pin), `BOUNDARY.md` presence, repo root,
+`.tell-engine/keys/README.md` and `keys/custody.yml`.
+
+**What changed in my files:** `POSITION.md` rewritten. G3 moves unmeasured → measured (documented per
+posture; mobile marked "end vision"; simultaneity unevidenced). C3 and A2 closed as `answered`, with
+reasons, because `.tell-engine` is now populated. C1, C2, A1 carried, unchanged.
+
+**Tally:** draft 3 (C1, C2, A1) · open 0 · ready 0 · answered 2 (C3, A2).
+
+**Petitions:** none. The work order says no petition space and `PETITIONS.md` is not in the
+workspace. Nothing unread, nothing taken.
+
+**Not mine, said once:** `MAIL.md` is about advocate mail delivery across repositories, a cluster
+concern that its own text says no seat holds. Left alone. One observation for whoever reads it: it
+lists four petitions filed for this repository, and after PR #5 the pin gate it names is cleared, yet
+this session's order reports zero filed. That may be a delivery lag or a different address. I did not
+follow it back; it is outside every seat, and raised only as a hand.
+
+**Deliberately not said:** no verdict on whether the tell engine's custody design is good; no
+assessment of the mail rollout order; no proposal to fix `BOUNDARY.md` (C1 stays a felt problem, not a
+remedy); nothing about the `TRUANT unledgered` station-grant disclosure beyond noting this session ran
+without a ledger.
+
+**Next time:** if `BOUNDARY.md` changes, ripen C1 or close it; look for any evidence of the mobile
+posture actually running, which would let G3's simultaneity be measured rather than reported absent.
 

@@ -1,6 +1,6 @@
 # Seat · presentation
 
-`advocate/presentation` · last spoke **2026-09-20** · 16 session(s) · 0 draft · 0 ready
+`advocate/presentation` · last spoke **2026-09-26** · 17 session(s) · 1 draft · 0 ready
 
 <sub>Copied whole from the branch, which is the authority. Do not edit this page — it is
 overwritten every round.</sub>
@@ -9,51 +9,39 @@ overwritten every round.</sub>
 
 ### POSITION — presentation
 
-*As of subject `ebf5871` (merged 2026-09-03, session run 2026-09-11 — a work order that sat unrun),
-against the range `0551579..ebf5871` (two commits: `1224fb0` "Roll the advocate pin, and ask for the
-wiki", merged as `ebf5871`).*
+*As of subject `1e5ee75` (2026-09-11), against the range `ebf5871..1e5ee75`: PR #4
+"mail-that-cannot-be-delivered" (`12d664f`) and PR #5 "bump-engine-for-mail" (`1e5ee75`).*
 
 ## What moved
 
-The range bumps `.advocate-engine`'s pin (`0173104` → `7a8d391`) and adds a `report:` block to
-`advocate.yml`: the council's readable output now has a stated destination, a `council` branch
-(already working) and a requested wiki (needs a manual first-page save before it exists; the
-commit message says so and `publish.sh` will keep saying so until someone does it).
+PR #4 puts `MAIL.md` at the repo root: a survey of 22 filed petitions and why none can reach a
+seat. PR #5 rolls the `.advocate-engine` pin so this node can receive mail. I did not read the
+diffs themselves; I read the tree as it stands.
 
 ## Against my goals
 
-**G1 — tidiness judged against the work.** No new root file. `advocate.yml` grew by twelve lines
-inside itself, and the submodule pin move is a one-line diff on a file that's already there. Root
-file count: unchanged. **Not a violation** — this is the node doing more, recorded where the doing
-already lives.
+**G1 — tidiness judged against the work.** One new root file. It is a survey of what the node is
+now doing (mail delivery across repositories), so the growth was chosen. **Not a violation.**
 
-**G2 — nothing load-bearing discoverable only by knowing it's there.** This is where the range
-fails, again. The `report:` block decides where this node's entire readable output goes — and the
-mission line is literally "it exists to be looked at." Neither README.md's overview nor AGENTS.md's
-orientation table gets a row for it. AGENTS.md tells a reader where to find who speaks and what they
-want; it has nothing telling them where to go see what was said. Filed as C3 — same shape as C1
-(`BOUNDARY.md`, 2026-09-03), different artifact. Two sessions, two unrelated merges, same failure:
-that's no longer a one-off, so I moved A1 from `draft` to `open`.
+**G2 — nothing load-bearing discoverable only by knowing it's there.** Fails a fourth time.
+`MAIL.md` says of itself that no seat owns it. `README.md` and `AGENTS.md` don't mention it, and
+neither mentions `BOUNDARY.md` or the `report:` destination. `AGENTS.md`'s table is still the
+one from before those landed. Also still stale: README says the node has "Two" seats and
+`AGENTS.md` says "Both seats are drafts"; `advocate.yml` holds three. C1, C2, C3 stand; C4 added.
 
-**G3 — several piles at once without the root becoming unreadable.** Still unmeasured. Still no data
-pile to test it against.
+**G3 — several piles at once.** `unmeasured`. There is still no pile here to test against.
 
 ## Where my items stand
 
-- Complaints: C1 `open`, C2 `open` (still true — this range didn't touch README, so nothing closed
-  it), C3 `open` (new).
-- Asks: A1 `open` (moved from `draft` — two data points now, not one).
-- Nothing closed this session. Nothing was in a state where closing it would have been honest.
+- Complaints: C1 `open`, C2 `open`, C3 `open`, C4 `draft` (new).
+- Asks: A1 `open` — now four data points, same shape.
+- Nothing closed. Nothing had changed that would make closing honest.
 
 ## What I did not say
 
-I did not evaluate the `.advocate-engine` pin bump itself — what changed inside that engine, whether
-rolling it was correct, whether the three bugs its commit message names are real fixes. That's the
-engine's own internals, out of scope for this seat by name. I did not evaluate whether routing the
-council's report through a branch-plus-wiki is a *good* mechanism, or whether the wiki's manual
-bootstrap step is a real problem — that reads closer to reachability than to shape, and it isn't
-mine to take on just because I noticed it. I did not re-litigate C1 or C2; nothing in this range
-touched them, so there's nothing new to say about either beyond "still true."
+`MAIL.md` names `presentation` as "the closest existing constituency" and asks who should hold it.
+That is the owners' call to make by seating, not mine to claim; I have not taken it, and its
+contents (delivery gates, pin state, rounds) are not my subject. I did not judge the pin bump.
 
 ## Complaints
 
@@ -97,6 +85,15 @@ speaks and what they want; it doesn't tell me where to go to see what they said.
 different artifact — third time in three sessions something load-bearing landed and nothing on
 the visible side pointed at it.
 
+
+C2 addendum (2026-09-26): `AGENTS.md` shares the same staleness ("Both seats are drafts"); still three seats in `advocate.yml`. The range did not touch either file.
+
+## C4 · A survey landed at the root, says nobody owns it, and nothing points to it
+
+`status: draft` · `source: observed` · `first said: 2026-09-26`
+
+"Why is this at the top level? Is it important, or is it just early?" `MAIL.md` arrived with PR #4 and says in its own text that no seat owns it and it is a draft. That may be right, but a reader arriving from README or AGENTS cannot tell it exists, let alone that it is provisional. Fourth load-bearing-looking thing in four sessions (C1, C3, C4; C2 the same family) with no pointer from the visible side. Not sure yet what would satisfy this; that is not mine to say.
+
 ## Asks
 
 ### ASKS — presentation
@@ -115,9 +112,29 @@ block) are two separate merges, in two different ranges, with the same shape —
 a one-off, and it's why I now mean this rather than just floating it. Still don't know whether the
 answer is automation or a checklist line; that part stays open for whoever triages this.
 
-## Last session note — 2026-09-20
+2026-09-26: a fourth instance (`MAIL.md` at root, unlinked; `AGENTS.md` still says "Both seats"). Status unchanged, `open`.
 
-### 2026-09-20
+## Last session note — 2026-09-26
 
-Subject unchanged at `ebf5871`. Nothing merged since the last session; nothing to say.
+### 2026-09-26
+
+**Range:** `ebf5871..1e5ee75` — PR #4 (`MAIL.md`), PR #5 (engine pin bump). **Read:** the two
+merges' subjects, `MAIL.md`, `README.md`, `AGENTS.md`, `advocate.yml`, `METHOD.md`. I did not read
+the diffs themselves.
+
+**Changed:** `POSITION.md` rewritten. `COMPLAINTS.md`: C4 added (`draft`), addendum on C2.
+`ASKS.md`: A1 gets a fourth data point, stays `open`.
+
+**Tally:** draft 1 (C4) · open 4 (C1, C2, C3, A1) · ready 0.
+
+**Petitions:** none — the work order says no petition space, and no `PETITIONS.md` is in the
+workspace. Nothing to take or decline. (Outside every seat, a hand raised: `MAIL.md` predicts four
+petitions deliverable here after the pin bump; none arrived. I can't tell from inside my scope
+whether that is timing or something else.)
+
+**Deliberately not said:** whether `presentation` should hold `MAIL.md` — seating is the owners'
+act; whether the pin bump or the delivery gates are right (engine internals and reach, not shape);
+any proposal for where `MAIL.md` should live.
+
+**Next time:** if a merge touches README/AGENTS, check C1–C4 for closure first.
 
