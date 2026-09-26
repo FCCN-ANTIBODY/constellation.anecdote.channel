@@ -37,3 +37,12 @@ and this is where the looking is supposed to happen. Neither README.md's overvie
 speaks and what they want; it doesn't tell me where to go to see what they said. Same shape as C1,
 different artifact — third time in three sessions something load-bearing landed and nothing on
 the visible side pointed at it.
+
+
+C2 addendum (2026-09-26): `AGENTS.md` shares the same staleness ("Both seats are drafts"); still three seats in `advocate.yml`. The range did not touch either file.
+
+## C4 · A survey landed at the root, says nobody owns it, and nothing points to it
+
+`status: draft` · `source: observed` · `first said: 2026-09-26`
+
+"Why is this at the top level? Is it important, or is it just early?" `MAIL.md` arrived with PR #4 and says in its own text that no seat owns it and it is a draft. That may be right, but a reader arriving from README or AGENTS cannot tell it exists, let alone that it is provisional. Fourth load-bearing-looking thing in four sessions (C1, C3, C4; C2 the same family) with no pointer from the visible side. Not sure yet what would satisfy this; that is not mine to say.
