@@ -1,6 +1,6 @@
 # Seat · presentation
 
-`advocate/presentation` · last spoke **2026-09-26** · 17 session(s) · 1 draft · 0 ready
+`advocate/presentation` · last spoke **2026-09-27** · 18 session(s) · 1 draft · 0 ready
 
 <sub>Copied whole from the branch, which is the authority. Do not edit this page — it is
 overwritten every round.</sub>
@@ -114,27 +114,9 @@ answer is automation or a checklist line; that part stays open for whoever triag
 
 2026-09-26: a fourth instance (`MAIL.md` at root, unlinked; `AGENTS.md` still says "Both seats"). Status unchanged, `open`.
 
-## Last session note — 2026-09-26
+## Last session note — 2026-09-27
 
-### 2026-09-26
+### 2026-09-27
 
-**Range:** `ebf5871..1e5ee75` — PR #4 (`MAIL.md`), PR #5 (engine pin bump). **Read:** the two
-merges' subjects, `MAIL.md`, `README.md`, `AGENTS.md`, `advocate.yml`, `METHOD.md`. I did not read
-the diffs themselves.
-
-**Changed:** `POSITION.md` rewritten. `COMPLAINTS.md`: C4 added (`draft`), addendum on C2.
-`ASKS.md`: A1 gets a fourth data point, stays `open`.
-
-**Tally:** draft 1 (C4) · open 4 (C1, C2, C3, A1) · ready 0.
-
-**Petitions:** none — the work order says no petition space, and no `PETITIONS.md` is in the
-workspace. Nothing to take or decline. (Outside every seat, a hand raised: `MAIL.md` predicts four
-petitions deliverable here after the pin bump; none arrived. I can't tell from inside my scope
-whether that is timing or something else.)
-
-**Deliberately not said:** whether `presentation` should hold `MAIL.md` — seating is the owners'
-act; whether the pin bump or the delivery gates are right (engine internals and reach, not shape);
-any proposal for where `MAIL.md` should live.
-
-**Next time:** if a merge touches README/AGENTS, check C1–C4 for closure first.
+Subject unchanged at `1e5ee75`. Nothing merged since the last session, and no petitions unread; nothing to say.
 

@@ -1,6 +1,6 @@
 # Seat · consent
 
-`advocate/consent` · last spoke **2026-09-26** · 18 session(s) · 3 draft · 0 ready
+`advocate/consent` · last spoke **2026-09-27** · 19 session(s) · 3 draft · 0 ready
 
 <sub>Copied whole from the branch, which is the authority. Do not edit this page — it is
 overwritten every round.</sub>
@@ -96,43 +96,9 @@ registration PR merges, not after — whether the person it now addresses is tol
 channel, if any. Not a proposed mechanism; just a decision this node currently has nowhere
 to record, because nothing has forced the question yet. Related to C1.
 
-## Last session note — 2026-09-26
+## Last session note — 2026-09-27
 
-### 2026-09-26
+### 2026-09-27
 
-**Range:** `ebf5871..1e5ee75` (subject `1e5ee75`), two merges: PR #4 `mail-that-cannot-be-delivered`
-and PR #5 `bump-engine-for-mail`. Net diff: `MAIL.md` added (118 lines), `.advocate-engine` pin
-advanced. Earlier stub for today ("subject unchanged, nothing to say") was wrong — the work order
-shows a real range — and this note replaces it.
-
-**Read:** the diff, `MAIL.md` whole, `METHOD.md`, my seat in `advocate.yml`. Did not read
-`.advocate-engine` itself (not this checkout's to read).
-
-**What changed in my files**
-- `POSITION.md` rewritten whole.
-- `COMPLAINTS.md`: C1 carried forward unchanged; **C2 added, draft** (deliverability as a metric
-  leans on ignoring).
-- `ASKS.md`: A1 carried forward unchanged.
-
-**Tally:** complaints 2 draft / 0 open / 0 ready · asks 1 draft / 0 open / 0 ready. Nothing closed;
-nothing honestly closable — still no mechanism here for C1/A1 to be tested against.
-
-**Petitions:** no `PETITIONS.md` in my workspace and the work order says none addressed here, so
-none unread. Note for next session: `MAIL.md` counts 4 petitions filed for this repository,
-blocked only by the pin; PR #5 is that bump. Expect the first delivery next round. I did not go
-looking for them.
-
-**Deliberately not said**
-- Whether the 22-petition survey is right, or the "working order" wise. Not my question.
-- Who should own `MAIL.md`. The file itself raises it; seating is the owners' act.
-- That petitions are "mail to the unconsenting" in the full sense — they are addressed to
-  repositories, not people, and a seat may decline at no cost. I've drafted C2 narrowly for that
-  reason.
-- Nothing about the `report:` block or wiki again; covered last time.
-
-**Outside every seat (hand raised):** the petition space's custody — who holds filed, undelivered
-petitions, and for how long — is not named in `MAIL.md`. Not taking it (it touches G3 only by
-analogy).
-
-**Next look:** whether delivered petitions arrive with an implied response expectation.
+Subject unchanged at `1e5ee75`. Nothing merged since the last session, and no petitions unread; nothing to say.
 

@@ -1,6 +1,6 @@
 # Seat · addressing
 
-`advocate/addressing` · last spoke **2026-09-26** · 18 session(s) · 3 draft · 0 ready
+`advocate/addressing` · last spoke **2026-09-27** · 19 session(s) · 3 draft · 0 ready
 
 <sub>Copied whole from the branch, which is the authority. Do not edit this page — it is
 overwritten every round.</sub>
@@ -120,34 +120,9 @@ Outcome: `.tell-engine` is present in the checkout as of this session, so G3 cou
 the earlier emptiness was a workspace-preparation gap I can't tell from here, and I don't hold that
 question. Closing because the condition asked about no longer holds.
 
-## Last session note — 2026-09-26
+## Last session note — 2026-09-27
 
-### 2026-09-26
+### 2026-09-27
 
-**Range:** `ebf5871..1e5ee75` (work order; two merges). PR #4 added `MAIL.md`; PR #5 bumped the
-`.advocate-engine` pin. **Read:** the diff (`MAIL.md`, pin), `BOUNDARY.md` presence, repo root,
-`.tell-engine/keys/README.md` and `keys/custody.yml`.
-
-**What changed in my files:** `POSITION.md` rewritten. G3 moves unmeasured → measured (documented per
-posture; mobile marked "end vision"; simultaneity unevidenced). C3 and A2 closed as `answered`, with
-reasons, because `.tell-engine` is now populated. C1, C2, A1 carried, unchanged.
-
-**Tally:** draft 3 (C1, C2, A1) · open 0 · ready 0 · answered 2 (C3, A2).
-
-**Petitions:** none. The work order says no petition space and `PETITIONS.md` is not in the
-workspace. Nothing unread, nothing taken.
-
-**Not mine, said once:** `MAIL.md` is about advocate mail delivery across repositories, a cluster
-concern that its own text says no seat holds. Left alone. One observation for whoever reads it: it
-lists four petitions filed for this repository, and after PR #5 the pin gate it names is cleared, yet
-this session's order reports zero filed. That may be a delivery lag or a different address. I did not
-follow it back; it is outside every seat, and raised only as a hand.
-
-**Deliberately not said:** no verdict on whether the tell engine's custody design is good; no
-assessment of the mail rollout order; no proposal to fix `BOUNDARY.md` (C1 stays a felt problem, not a
-remedy); nothing about the `TRUANT unledgered` station-grant disclosure beyond noting this session ran
-without a ledger.
-
-**Next time:** if `BOUNDARY.md` changes, ripen C1 or close it; look for any evidence of the mobile
-posture actually running, which would let G3's simultaneity be measured rather than reported absent.
+Subject unchanged at `1e5ee75`. Nothing merged since the last session, and no petitions unread; nothing to say.
 
