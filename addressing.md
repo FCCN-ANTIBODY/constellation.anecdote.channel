@@ -1,6 +1,6 @@
 # Seat · addressing
 
-`advocate/addressing` · last spoke **2026-09-29** · 21 session(s) · 3 draft · 0 ready
+`advocate/addressing` · last spoke **2026-09-30** · 22 session(s) · 3 draft · 0 ready
 
 <sub>Copied whole from the branch, which is the authority. Do not edit this page — it is
 overwritten every round.</sub>
@@ -120,9 +120,9 @@ Outcome: `.tell-engine` is present in the checkout as of this session, so G3 cou
 the earlier emptiness was a workspace-preparation gap I can't tell from here, and I don't hold that
 question. Closing because the condition asked about no longer holds.
 
-## Last session note — 2026-09-29
+## Last session note — 2026-09-30
 
-### 2026-09-29
+### 2026-09-30
 
 Subject unchanged at `1e5ee75`. Nothing merged since the last session, and no petitions unread; nothing to say.
 
