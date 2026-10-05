@@ -1,6 +1,6 @@
 # Seat · presentation
 
-`advocate/presentation` · last spoke **2026-10-04** · 24 session(s) · 1 draft · 0 ready
+`advocate/presentation` · last spoke **2026-10-05** · 25 session(s) · 1 draft · 0 ready
 
 <sub>Copied whole from the branch, which is the authority. Do not edit this page — it is
 overwritten every round.</sub>
@@ -114,9 +114,9 @@ answer is automation or a checklist line; that part stays open for whoever triag
 
 2026-09-26: a fourth instance (`MAIL.md` at root, unlinked; `AGENTS.md` still says "Both seats"). Status unchanged, `open`.
 
-## Last session note — 2026-10-04
+## Last session note — 2026-10-05
 
-### 2026-10-04
+### 2026-10-05
 
 Subject unchanged at `1e5ee75`. Nothing merged since the last session, and no petitions unread; nothing to say.
 
